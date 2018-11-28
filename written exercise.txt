@@ -1,0 +1,9 @@
+
+1. Sometime we want to use SetImmediate because we want to push in priority Queue the callback function behind I/O event callbacks that
+are already in event queue.
+
+2. Process.nextTick vs SetImmediate
+process.NextTick() would executed at next tick of event loop. However, the setImmediate, basically has a separate phase 
+which ensures that the callback registered under setImmediate() will be called only after the IO callback and polling phase.
+
+3.module, net, path, os, root,util, vm, stream,fs, http, https
